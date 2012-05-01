@@ -1,0 +1,40 @@
+@media only screen and (max-width:720px){
+	nav {
+		display: none;
+	}
+	#nav {
+		display: inline;
+	}
+
+	#nav select{
+		width: 90%;
+		background-color: transparent;
+		color: white;
+	}
+	.columns {
+		width: 92.5%;
+	}
+	body,select {
+		font-size: 1em;
+	}
+	.second {
+		border-left: 0px;
+		border-right: 0px;
+	}
+	#main #content > .columns h4 {
+		text-align: left;
+	}
+	#main #hero .divider{
+		width: 100%;
+	}
+}
+@media screen and (max-width:480px){
+	body,select {
+		font-size: .75em;
+	}
+}
+@media screen and (max-width:240px){
+	body,select {
+		font-size: .50em;
+	}
+}

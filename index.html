@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/media.css">
+		<link href='http://fonts.googleapis.com/css?family=Lobster|Cabin' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="js/jquery1.7.1.js"></script>
+		<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+		<!--[if lt IE 9]>
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<title>Responsive</title>
+	</head>
+	<body>
+		<header>
+			<div class="wrapper">
+				<div class="divider">
+					<hgroup>
+						<h2>Responsive Example</h2>
+					</hgroup>
+				</div>
+				<div class="divider">
+					<nav>
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Pros</a></li>
+							<li><a href="#">Cons</a></li>
+							<li><a href="#">Chee</a></li>
+						</ul>
+					</nav>
+					<div id="nav">
+						<select>
+							<option selected="selected">Home</option>
+							<option>Pros</option>
+							<option>Cons</option>
+							<option>Chee</option>
+						</select>
+					</div>
+				</div>
+				<div class="clearFix"></div>
+			</div>
+		</header>
+		<div id="main">
+			<div class="wrapper">
+				<div id="hero">
+					<div class="divider">
+						<img src="img/cut-the-rope.png"></img>
+					</div>
+					<div class="divider">
+						<h2>Lorem ipsum dolor sit amet</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+					</div>
+					<div class = "clearFix"></div>
+				</div>
+				<div id="content">
+					<div class="columns">
+						<h4>Lorem ipsum dolor sit amet</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+					</div>
+					<div class="columns">
+						<h4>Lorem ipsum dolor sit amet</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+					</div>
+					<div class="columns">
+						<h4>Lorem ipsum dolor sit amet</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+					</div>
+					<div class="clearFix"></div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="wrapper">
+				<div class="columns">
+					<h2>Sitemap</h2>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Pros</a></li>
+						<li><a href="#">Cons</a></li>
+						<li><a href="#">Chee</a></li>
+					</ul>
+				</div>
+				<div class="columns second">
+					<h2>Information</h2>
+					<p><b>Adrian Peterson Co</b><br>
+						18-B Polytech St.<br>
+						University Hills Subd.<br>
+						Potrero, Malabon 1470<br>
+						(0916)-236-1958<br>
+						<a href="mailto@adrianpco@gmail.com">adrianpco@gmail.com</a><br>
+					</p>
+				</div>
+				<div class="columns">
+					<h2>Credits</h2>
+					<ul>
+						<li><a href="http://badsectorlabs.staticloud.net">BadSector Software Labs</a></li>
+						<li><a href="http://twitter.com/superken">Ken-Lauren Daganio</a></li>
+						<li><a href="http://twitter.com/arscariosus">John Crisostomo</a></li>
+						<li><a href="http://twitter.com/marlontalks">Marlon Perillo</a></li>
+					</ul>
+				</div>
+				<div class="clearFix"></div>
+			</div>
+		</footer>
+	</body>
+	<script>
+	$(document).ready(function(){
+		$(window).resize(function() {
+			var size = $(window).width();
+			if(size <= 720){
+				$(".columns").css("width","92.5%");
+				$("nav").css("display", "none");
+				$("#nav").css("display", "inline");
+				$("#main #hero .divider").css("width", "100%");
+			} else {
+				$(".columns").css("width","26.5%");
+				$("nav").css("display", "block");
+				$("#nav").css("display", "none");
+				$("#main #hero .divider").css("width", "43%");
+			}
+		});
+	});
+	</script>
+</html> 

@@ -1,0 +1,177 @@
+* {
+	padding:0;
+	margin:0;
+}
+body {
+	font-family: 'Cabin', Helvetica, Arial, sans-serif;
+	background-image: url('../img/dark_Tire.png');
+	background-repeat: repeat;	
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	box-shadow: 0px 0px 2px 2px #222;
+	text-decoration: underline;
+}
+.wrapper {
+	max-width: 960px;
+	width: 90%;
+	margin: 0 auto;
+}
+.clearFix {
+	clear: both;
+}
+
+header, footer {
+	background: #333333;
+	color: #CCC;
+	background-image: url('../img/dark_Tire.png');
+	background-repeat: repeat;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Lobster', Georgia, Times, serif;
+}
+
+header hgroup{
+	padding: 7.5px;
+}
+
+.columns, .divider {
+	-webkit-transition: 	all .25s ease;
+	-moz-transition:		all .25s ease;
+	-o-transition:			all .25s ease;
+	transition:				all .25s ease;
+}
+
+.divider {
+	width: 45%;
+	margin: 0 1% 0 1%;
+	padding: 5px;
+	float: left;
+}
+
+nav ul {
+	padding: 5px;
+	display: block;
+=
+}
+
+nav ul li {
+	padding: 5px;
+	display: inline-block;
+	list-style-type: none;
+	margin: 0 5px 0 5px; 
+}
+
+nav ul li a {
+	color: #CCC;
+	margin: 0 5px 0 5px;
+}
+
+#nav {
+	display: none;
+	text-align: center;
+	float:right;
+	width: 100%;
+}
+
+select {
+	padding: 7.5px;
+	font: 18px/1em 'Calibri', sans-serif;
+	border: .5px solid #CCC;
+	margin: 5px 0 0 0 ;
+
+	-webkit-border-radius: 	3px;
+	-moz-border-radius: 	3px;
+	border-radius:			3px;
+}
+
+#main {
+	background-image: url('../img/tex2res2.png');
+	background-repeat: repeat;
+	color: #333;
+	padding: 10px;
+}
+
+#main #hero{
+	padding: 10px;
+	border: 3px dashed #222;
+
+	-webkit-border-radius: 	10px;
+	-moz-border-radius:		10px;
+	border-radius:			10px;
+}
+
+#main #hero img {
+	height: 50%;
+	width: 50%;
+	text-align: center;
+}
+
+#main #hero .divider {
+	vertical-align: middle;
+
+	padding: 10px;
+	text-align: center;
+	width: 43%;
+}
+
+#main #content > .columns{
+	margin-top: 10px;
+	background: #EEE;
+
+	-webkit-border-radius: 	10px;
+	-moz-border-radius:		10px;
+	border-radius:			10px;
+}
+
+.divider > h2 {
+	margin: 10px 0 10px 0;
+}
+
+#main #content > .columns h4{
+	text-align: center;
+	padding: 5px;
+	font: 18px/1.5em 'Cabin', sans-serif;
+	color: #222;
+}
+
+#main #content > .columns h4 p{
+	margin: 10px 0 10px 0;
+	color: #555;
+}
+
+.columns {
+	width: 26.5%;
+	margin: .5% 2.5% .5% 2.5%;
+	padding: 5px;
+	float: left;
+	overflow: hidden;
+}
+
+footer {
+	font: 11px/1.25em 'Cambria', sans-serif;
+}
+
+footer h2{
+	margin: 10px 0 10px 0;
+	text-align: center;
+}
+
+footer .second {
+	border-left: 2px dotted #CCC;
+	border-right: 2px dotted #CCC;
+}
+
+footer ul li {
+	padding: 2.5px;
+	display: block;
+}
+
+footer a{
+	color: #CCC;
+	margin: 5px 0 5px 0;
+	border-bottom: 1px dashed #CCC;
+}
